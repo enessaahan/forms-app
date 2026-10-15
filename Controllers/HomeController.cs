@@ -73,10 +73,11 @@ public class HomeController : Controller
             model.ProductId = Repository.Products.Count + 1;
             Repository.CreateProduct(model);
             return RedirectToAction("Index");
+            //kaydet butonuna bastığımızda direk index sayfasına dönmemizi sağlar redirectoaction
         }
         ViewBag.Categories = new SelectList(Repository.Categories, "CategoryId", "Name");
         return View(model);
-        //kaydet butonuna bastığımızda direk index sayfasına dönmemizi sağlar redirectoaction
+
     }
 
     public IActionResult Edit(int? id)

@@ -10,12 +10,14 @@ namespace FormsApp.Models
         [Display(Name = "Urun Adı")]
         public string? Name { get; set; }
 
+
         [Display(Name = "Urun Ücreti")]
         public decimal Price { get; set; }
 
         [Display(Name = "Urun Resmi")]
         public string Image { get; set; } = string.Empty;
 
+        [Display(Name = "Aktif ")]
         public bool IsActive { get; set; }
 
 

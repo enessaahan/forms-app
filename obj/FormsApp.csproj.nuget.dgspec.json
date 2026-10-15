@@ -1,32 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\enes_\\Desktop\\dersdosyaları\\sadıkturan\\FormsApp_final\\FormsApp.csproj": {}
+    "C:\\Users\\enes\\Desktop\\dersdosyaları\\sadıkturan\\FormsApp_final\\FormsApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\enes_\\Desktop\\dersdosyaları\\sadıkturan\\FormsApp_final\\FormsApp.csproj": {
+    "C:\\Users\\enes\\Desktop\\dersdosyaları\\sadıkturan\\FormsApp_final\\FormsApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\enes_\\Desktop\\dersdosyaları\\sadıkturan\\FormsApp_final\\FormsApp.csproj",
+        "projectUniqueName": "C:\\Users\\enes\\Desktop\\dersdosyaları\\sadıkturan\\FormsApp_final\\FormsApp.csproj",
         "projectName": "FormsApp",
-        "projectPath": "C:\\Users\\enes_\\Desktop\\dersdosyaları\\sadıkturan\\FormsApp_final\\FormsApp.csproj",
-        "packagesPath": "C:\\Users\\enes_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\enes_\\Desktop\\dersdosyaları\\sadıkturan\\FormsApp_final\\obj\\",
+        "projectPath": "C:\\Users\\enes\\Desktop\\dersdosyaları\\sadıkturan\\FormsApp_final\\FormsApp.csproj",
+        "packagesPath": "C:\\Users\\enes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\enes\\Desktop\\dersdosyaları\\sadıkturan\\FormsApp_final\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\enes_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\enes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0-windows": {
+            "framework": "net8.0-windows7.0",
+            "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
         },
@@ -39,11 +44,21 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0-windows": {
+          "framework": "net8.0-windows7.0",
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,6 +70,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -63,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
